@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.cart.CartFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Order:"
+        android:padding="20dp">
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_details_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="10dp"
+        android:theme="@style/Theme.MaterialComponents"
+        android:backgroundTint="@android:color/holo_orange_dark">
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
